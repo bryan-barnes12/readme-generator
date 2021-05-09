@@ -6,8 +6,8 @@ inquirer
   .prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'projTitle',
+      message: 'Project Title?',
     }
     // {
     //     type: 'input',
@@ -34,8 +34,8 @@ inquirer
     // fs.access(filename, fs.constants.F_OK, (err) => {
     //     console.log(`${filename} ${err ? 'does not exist' : 'exists'}`);
     //   });
-    const { name } = data;
-    fs.writeFile('README.md', template.getReadMe(name), (err) =>
+    const { projTitle } = data;
+    fs.writeFile('README.md', template.getReadMe(projTitle, projDesc = 'test', projInst = 'test', projUsage = 'test', projImg = 'test', projCredits = 'test', projLic = 'MIT'), (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
