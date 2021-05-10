@@ -12,7 +12,7 @@ This project is built with the intention of taking the guesswork out of building
 ## Installation
 Install the package using npm.
 ## Usage
-To use, enter "node index.js" from the directory in which you have installed the package.
+To use, enter "node index.js" from the directory in which you have installed the package. You can find a detailed video for creating a README [here](https://youtu.be/0KrxhisrtR8)
 
 ![alt text](assets/images/example.png)
 
