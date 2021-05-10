@@ -6,8 +6,10 @@ ${projDesc}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributions](#contributions)
+- [Testing Information](#testing)
 - [License](#license)
+- [Questions](#questions)
 ## Installation
 ${projInst}
 ## Usage
