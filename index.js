@@ -49,14 +49,16 @@ inquirer
         type: 'input',
         name: 'projGitUser',
         message: 'GitHub username:',
+      },
+      {
+        type: 'input',
+        name: 'projEmail',
+        message: 'Email address:',
       }
   ])
   .then((data) => {
-    // fs.access(filename, fs.constants.F_OK, (err) => {
-    //     console.log(`${filename} ${err ? 'does not exist' : 'exists'}`);
-    //   });
-    const { projTitle, projDesc, projInst, projUsage, projImg, projTest, projLic, projGitUser } = data;
-    fs.writeFile('README.md', template.getReadMe(projTitle, projDesc, projInst, projUsage, projImg, projTest, projLic, projGitUser), (err) =>
+    const { projTitle, projDesc, projInst, projUsage, projImg, projTest, projLic, projGitUser, projEmail } = data;
+    fs.writeFile('README.md', template.getReadMe(projTitle, projDesc, projInst, projUsage, projImg, projTest, projLic, projGitUser, projEmail), (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
